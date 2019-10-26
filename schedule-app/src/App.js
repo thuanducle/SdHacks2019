@@ -1,8 +1,8 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import Navbar from "./Navbar"
-import MainContent from "./MainContent"
-import Footer from "./Footer"
+import Navbar from "./Components/Navbar"
+import MainContent from "./Components/MainContent"
+import Footer from "./Components/Footer"
 
 function App()
 {
