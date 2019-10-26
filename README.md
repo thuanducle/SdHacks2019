@@ -1,3 +1,3 @@
 # SDHACKS 2019:
-Team Members: Thuan, Hannah, Terry, Khanh
+Team Members:  KHANH, Thuan, Hannah, Terry
 
