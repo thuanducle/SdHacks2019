@@ -49,8 +49,7 @@ function App()
   return (
     <div>
           <Navbar />
-          <Bar />
-        <MainContent task = {listOfTasks[0]} />
+          <Bar task={listOfTasks[0]} />
         <Footer />
     </div>
     )
