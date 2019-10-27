@@ -6,7 +6,9 @@
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-google-calendar-api": "^1.0.10",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "react-timeframe": "^2.1.0",
+    "semantic-ui-react": "^0.88.1"
   },
   "scripts": {
     "start": "react-scripts start",

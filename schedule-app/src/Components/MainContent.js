@@ -1,14 +1,12 @@
 import React from "react"
+import { Segment } from "semantic-ui-react"
 
-function MainContent(){
+function MainContent(props) {
+	let task = props.task
 	return (
-		<div>
-		    <ul> 
-		        <li> List 1: </li>
-		        <li> List 2: </li>
-		        <li> List 3: </li>
-		    </ul>
-		</div>
+		<Segment>
+			{task.name}
+		</Segment>
 		)
 }
 

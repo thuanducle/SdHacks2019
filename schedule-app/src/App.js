@@ -4,18 +4,76 @@ import Navbar from "./Components/Navbar"
 import MainContent from "./Components/MainContent"
 import Footer from "./Components/Footer"
 import Bar from "./Components/Bar"
+import {Button} from 'semantic-ui-react';
 
+const listOfTasks = [
+	{	
+		name: "Breakfast",
+		startTime: 8,
+		endTime: 9,
+		completed: false
+	},
+	{
+		name: "Meditation",
+		startTime: 10,
+		endTime: 11,
+		completed: false
+	},
+	{
+		name: "Lunch",
+		startTime: 12,
+		endTime: 13,
+		completed: false
+	},
+	{
+		name: "Homework",
+		startTime: 14,
+		endTime: 17,
+		completed: false
+	},
+	{ 
+		name: "Dinner",
+		startTime: 18,
+		endTime: 19,
+		completed: false
+	},
+	{
+		name: "Sleep",
+		startTime:23,
+		endTime: 7,
+		completed: false
+	}
+	]
+
+// ButtonDidIt () 
+// {
+
+// }
+
+// const ButtonBreakfast = () => <Button onClick = {ButtonDidIt}>Did It</Button>
+
+
+
+// function Breakfast()
+// {
+	
+// }
 
 function App()
 {
   return (
     <div>
-          <Navbar />
-          <Bar />
-        <MainContent />
+        <Navbar />
+        <Bar />
+        <MainContent 
+        task={listOfTasks[0]}/>
         <Footer />
     </div>
     )
 }
 
 export default App
+
+
+
+
