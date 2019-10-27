@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar"
 import MainContent from "./Components/MainContent"
 import Footer from "./Components/Footer"
 import Bar from "./Components/Bar"
+import Clock from "./Components/Clock"
 
 const listOfTasks = [
 	{	
@@ -50,6 +51,7 @@ function App()
     <div>
           <Navbar />
           <Bar task={listOfTasks} />
+          <Clock/>
         <Footer />
     </div>
     )
