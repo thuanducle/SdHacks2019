@@ -50,7 +50,7 @@ function App()
     <div>
           <Navbar />
           <Bar />
-        <MainContent />
+        <MainContent task = {listOfTasks[0]} />
         <Footer />
     </div>
     )
