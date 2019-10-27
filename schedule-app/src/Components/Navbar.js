@@ -25,6 +25,7 @@ function Navbar(){
             name = 'schedule'
             active={activePage === 'schedule'}
             onClick={handleItemClick}
+            href="#schedule"
           />
         </Menu>
       </Segment>
