@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { Button, Segment, Progress } from 'semantic-ui-react'
 
-export default function(props) {
+
+export default function Bar(props) {
 
   const [taskNumber, setTaskNumber] = useState(0)
   const [percent, setPercent] = useState(20)
@@ -17,18 +18,22 @@ export default function(props) {
     increment()
     setTaskNumber( (taskNumber + 1)%maxTaskNumber) 
   }
+  let didItNotHandler = () => {
+    decrement()
+    setTaskNumber( (taskNumber + 1)%maxTaskNumber) 
+  }
+
 
   let task = props.task[taskNumber]
 
   return (
     <Segment>
     <Progress percent={percent} indicating />
-    <Button onClick={increment}>Increment</Button>
-    <Button onClick={decrement}>Decrement</Button>
     <br />
     {task.name}
     <br />
     <Button onClick={didItHandler} >I did it</Button>
+    <Button onClick={didItNotHandler} >I did not</Button>
     </Segment>
     )
   
