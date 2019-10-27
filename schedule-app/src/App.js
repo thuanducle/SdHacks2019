@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar"
 import MainContent from "./Components/MainContent"
 import Footer from "./Components/Footer"
 import Bar from "./Components/Bar"
+import MissedTasks from "./Components/MissedTasks"
 
 const listOfTasks = [
 	{	
@@ -48,9 +49,10 @@ function App()
 {
   return (
     <div>
-          <Navbar />
-          <Bar />
+        <Navbar />
+        <Bar />
         <MainContent />
+        <MissedTasks />
         <Footer />
     </div>
     )

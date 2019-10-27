@@ -16,9 +16,10 @@ function Navbar(){
             onClick={handleItemClick}
           />
           <Menu.Item
-            name = 'missed assignments'
-            active={activePage === 'missed assignments'}
+            name = 'missed tasks'
+            active={activePage === 'missed tasks'}
             onClick={handleItemClick}
+            href="#main"
           />
           <Menu.Item
             name = 'schedule'
