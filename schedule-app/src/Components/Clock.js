@@ -1,5 +1,7 @@
 import React from 'react'
 
+
+
 export default class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -54,8 +56,6 @@ export default class Clock extends React.Component {
   render() {
     return(
       <div>
-        <button onClick={this.startTimer}>Start</button>
-        m: {this.state.time.m} s: {this.state.time.s}
       </div>
     );
   }
