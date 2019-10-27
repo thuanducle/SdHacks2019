@@ -4,12 +4,8 @@ import Navbar from "./Components/Navbar"
 import MainContent from "./Components/MainContent"
 import Footer from "./Components/Footer"
 import Bar from "./Components/Bar"
-<<<<<<< HEAD
 import MissedTasks from "./Components/MissedTasks"
 import Schedule from "./Components/Schedule"
-=======
-import Clock from "./Components/Clock"
->>>>>>> f71d86321f8bfd0b180408671d2f3e14b9380f8e
 
 const listOfTasks = [
 {	
