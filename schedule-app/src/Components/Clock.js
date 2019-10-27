@@ -1,6 +1,10 @@
 import React from 'react'
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> a0a355ad048b2bfdbce70a6808c6b08838fced16
 export default class Clock extends React.Component {
   constructor(props) {
     super(props);
@@ -53,3 +57,13 @@ export default class Clock extends React.Component {
   }
 }
 
+<<<<<<< HEAD
+=======
+  render() {
+    return(
+      <div>
+      </div>
+    );
+  }
+}
+>>>>>>> a0a355ad048b2bfdbce70a6808c6b08838fced16
