@@ -1,14 +1,19 @@
 import React from "react"
+import {Segment} from "semantic-ui-react"
+import {Button, Progress} from 'semantic-ui-react'
 
-function MainContent(){
+import ProgressExampleIndicating from "./Bar"
+
+
+function MainContent(props) {
+	let task = props.task
 	return (
-		<div>
-		    <ul> 
-		        <li> List 1: </li>
-		        <li> List 2: </li>
-		        <li> List 3: </li>
-		    </ul>
-		</div>
+		<Segment>
+			{task.name}
+			<br />
+			<Button onClick={ProgressExampleIndicating.increment}>I did it</Button>
+			//  //ProgressExampleIndicating.render()
+		</Segment>
 		)
 }
 

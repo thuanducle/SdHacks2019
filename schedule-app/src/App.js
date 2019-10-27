@@ -49,10 +49,9 @@ function App()
 {
   return (
     <div>
-        <Navbar />
-        <Bar />
-        <MainContent />
-        <MissedTasks />
+          <Navbar />
+          <Bar task={listOfTasks[0]} />
+          <MissedTasks />
         <Footer />
     </div>
     )

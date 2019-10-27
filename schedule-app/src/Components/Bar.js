@@ -1,20 +1,29 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { Button, Progress } from 'semantic-ui-react'
 
-export default class ProgressExampleIndicating extends Component {
-  state = { percent: 33 }
+export default function(props) {
+  let task = props.task
+  const [percent, setPercent] = useState(20)
 
-  increment = () =>
-    this.setState((prevState) => ({
-      percent: prevState.percent >= 100 ? 0 : prevState.percent + 20,
-    }))
-
-  render() {
-    return (
-      <div>
-        <Progress percent={this.state.percent} indicating />
-        <Button onClick={this.increment}>Increment</Button>
-      </div>
-    )
+  let increment = () => {
+    setPercent(percent >= 100 ? 0 : percent + 10)
   }
+  let decrement = () => {
+    setPercent(percent >= 100 ? 0 : percent - 10)
+  }
+
+
+  return (
+    <div>
+    <Progress percent={percent} indicating />
+    <Button onClick={increment}>Increment</Button>
+    <Button onClick={decrement}>Decrement</Button>
+    <br />
+    {task.name}
+    <br />
+    <Button onClick={increment}>I did it</Button>
+    </div>
+    )
+  
 }
+
