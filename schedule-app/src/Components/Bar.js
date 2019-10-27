@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import { Button, Segment, Progress } from 'semantic-ui-react'
 
-export default function(props) {
+function Bar(props) {
 
   const [taskNumber, setTaskNumber] = useState(0)
   const [percent, setPercent] = useState(20)
+
+
   let maxTaskNumber = props.task.length
 
   let increment = () => {
@@ -34,3 +36,4 @@ export default function(props) {
   
 }
 
+export default Bar
