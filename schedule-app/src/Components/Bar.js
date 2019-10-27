@@ -1,9 +1,20 @@
-import React from "react"
+import React, { Component } from 'react'
+import { Button, Progress } from 'semantic-ui-react'
 
-function Bar() {
+export default class ProgressExampleIndicating extends Component {
+  state = { percent: 33 }
+
+  increment = () =>
+    this.setState((prevState) => ({
+      percent: prevState.percent >= 100 ? 0 : prevState.percent + 20,
+    }))
+
+  render() {
     return (
-        <p>hekko</p>
+      <div>
+        <Progress percent={this.state.percent} indicating />
+        <Button onClick={this.increment}>Increment</Button>
+      </div>
     )
+  }
 }
-
-export default Bar;
