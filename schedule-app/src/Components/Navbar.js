@@ -1,10 +1,32 @@
-import React from "react"
+import React, {useState} from "react"
+import { Segment, Menu } from 'semantic-ui-react'
 
 function Navbar(){
+	const [activePage, setActivePage] = useState('home')
+
+	let handleItemClick = (e, {name}) => {
+		setActivePage(name)
+	}
 	return (
-		<div>
-		<h1> This is a test </h1>
-		</div>
+		<Segment>
+        <Menu pointing secondary>
+          <Menu.Item
+            name = 'home'
+            active={activePage === 'home'}
+            onClick={handleItemClick}
+          />
+          <Menu.Item
+            name = 'missed assignments'
+            active={activePage === 'missed assignments'}
+            onClick={handleItemClick}
+          />
+          <Menu.Item
+            name = 'schedule'
+            active={activePage === 'schedule'}
+            onClick={handleItemClick}
+          />
+        </Menu>
+      </Segment>
 		)
 }
 
